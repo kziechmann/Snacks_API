@@ -5,7 +5,7 @@ exports.up = function(knex) {
     table.increments().notNullable()
     table.string('snackName').notNullable()
     table.text('description').notNullable().defaultTo('')
-    table.integer('price').notNullable()
+    table.integer('price').notNullable().defaultTo(0)
   })
 }
 
